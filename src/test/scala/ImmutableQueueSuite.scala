@@ -22,6 +22,8 @@ class ImmutableQueueSuite extends FunSuite {
 
     val q6 = q5.deQueue()
     assert(q6.head === Some(3))
+
+    assert (q6.deQueue().isEmpty)
   }
 
   // TODO Test other data types and boundary cases
